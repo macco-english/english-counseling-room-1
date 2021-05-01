@@ -29,6 +29,10 @@ font-weight: bold;
 margin: 2% 5% 0% 5%;
 }
 
+.less-margin-top{
+margin-top: 1%;
+}
+
 /*font decoration*/
 .bold {
 font-weight: bold;
@@ -48,6 +52,10 @@ margin: 3% 0% 3% 0%;
 text-decoration: underline;
 }
 
+.underline {
+text-decoration: underline;
+}
+
 .underline-pink {
 border-bottom: solid 2px #eb9f95;
 }
@@ -64,6 +72,10 @@ padding: 3% 3% 3% 3%;
 .green{
 color:#00bfa8;
 margin-top:3%;
+}
+
+.blue{
+color: #2046f1;
 }
 
 /* text alighnment */
@@ -103,6 +115,11 @@ margin: 16px;
 .advice p{
 text-align: left;
 margin: 2% 5% 2% 5%;
+}
+
+.format p{
+text-align: left;
+margin: 5% 5% 5% 5%;
 }
 
 .bot-sp{
@@ -175,6 +192,10 @@ margin: 8% 0% 5% 0%;
 }
 .bot-sp, .exp > p {
 margin-top: 3%;
+}
+
+.format > p{
+margin: 3% 5% 1% 5%;
 }
 }
 
@@ -672,3 +693,31 @@ h3, h4 {
 
 
 
+.openbox input {
+display: none; /* チェックボックスを隠す */
+}
+.openbox .boxshow {
+height: 0;
+opacity: 0; /* 折り畳んだ時に中を透明にする */
+display: none;/* 閉じた時に中身の要素をなくす */
+text-align: left;
+margin: 2% 5% 2% 5%;
+padding: 1%;
+background-color: rgba(233, 233, 233, 0.842);
+}
+.inputcss:checked + .boxshow {
+height: auto;
+opacity: 1; /*クリックやタップで中を表示させる*/
+display: block;/* 折り畳みになるように */
+}
+.openbox label {
+background: #28bca9;
+color:#ffffff;
+padding: 5px 10px;
+text-align: center;
+margin: 1% 3% 2% 3%;
+}
+
+.openbox-navy label {
+background: #28407e;
+}
