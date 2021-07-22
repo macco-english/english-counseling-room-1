@@ -431,6 +431,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 100px;
 }
 
+#hero p{
+  text-align: center;
+}
+
 @media (max-width:413px){
   #hero .container {
     padding-top: 30px;
@@ -558,20 +562,28 @@ section {
   color: #fff;
 }
 
-.about .content {
-  padding: 0px 30px 0px 0;
-}
-
-.about .section-title h2 {
+.about2 {
+  background: #555b6e;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
   color: #fff;
 }
 
-.about .content p {
+.about .content, .about2 .content{
+  padding: 0px 30px 0px 0;
+}
+
+.about .section-title h2, .about2 .section-title h2 {
+  color: #fff;
+}
+
+.about .content p, .about2 .content p {
   margin-bottom: 30px;
 }
 
 @media (max-width: 576px) {
-.about .content p {
+.about .content p, .about2 .content p {
   width: 100%;
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
@@ -580,7 +592,7 @@ section {
   }
 }
 
-.about .content .about-btn {
+.about .content .about-btn, .about2 .content .about-btn {
   display: inline-block;
   background: rgba(255, 255, 255, 0.322);
   padding: 6px 30px 8px 30px;
@@ -589,43 +601,47 @@ section {
   transition: 0.3s;
 }
 
-.about .content .about-btn i {
+#eg{
+  margin-top: 3%;
+}
+
+.about .content .about-btn i, .about2 .content .about-btn i {
   font-size: 14px;
 }
 
-.about .content .about-btn:hover {
+.about .content .about-btn:hover, .about2 .content .about-btn:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.about .icon-boxes .icon-box {
+.about .icon-boxes .icon-box, .about2 .icon-boxes .icon-box {
   margin-top: 30px;
 }
 
-.about .icon-boxes .icon-box i {
+.about .icon-boxes .icon-box i, .about2 .icon-boxes .icon-box i, .icon-box .iconify {
   font-size: 40px;
   color: #bee3db;
   margin-bottom: 10px;
 }
 
-.about .icon-boxes .icon-box h3 {
+.about .icon-boxes .icon-box h3, .about2 .icon-boxes .icon-box h3 {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-.about .icon-boxes .icon-box p {
+.about .icon-boxes .icon-box p, .about2 .icon-boxes .icon-box p {
   font-size: 15px;
 }
 
 @media (max-width: 1200px) {
-  .about .content {
+  .about .content, .about2 .content {
     padding-right: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .about {
+  .about, .about2 {
     text-align: center;
   }
 }
@@ -634,7 +650,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
-  background: #555b6e;
+  background: #89b0ae;
   padding-bottom: 80px;
 }
 
@@ -808,6 +824,31 @@ section {
 .exp .openbox{
   text-align: center;
 }
+
+.example{
+  text-align: center;
+  margin-bottom:10%;
+}
+
+.example h2{
+  background: #89b0ae;
+  color: #ffffff;
+  padding: 2%;
+  border-radius: 50px;
+}
+
+.example h3{
+  border-bottom: solid 2px #89b0ae;
+}
+
+.example h3, p{
+  text-align: left;
+}
+
+.example img{
+  padding: 3% 0 3% 0;
+}
+
 
 /*--------------------------------------------------------------
 # Detail 学習アドバイス詳細
